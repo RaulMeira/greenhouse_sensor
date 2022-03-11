@@ -27,9 +27,10 @@
 </html>
 <script>
     function calculo() {
-        var total = faturamento.value * 0.4 + Number(faturamento.value)
-        mostrar.innerHTML = `Você está faturando R$${faturamento.value}, 
-        e se utilizar o nosso sistema você pode faturar <b>R$${total}!!!</b>`;
+        var ganhava = Number(faturamento.value)
+        var total = ganhava * 0.4 + ganhava
+        mostrar.innerHTML = `Você está faturando R$${ganhava.toFixed(2)}, 
+        e se utilizar o nosso sistema você pode faturar <b>R$${total.toFixed(2)}!!!</b>`;
     }
 
 </script>
