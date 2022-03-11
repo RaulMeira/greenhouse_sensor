@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+</head>
+
+<body>
+    <img src="logo greenhouse.jpg" alt="" style="height: 150px">
+    <h1>Simulador de ganhos</h1>
+    Simule abaixo uma expectativa do quanto você pode ganhar utilizando
+    o sistema da <span style="color: green;"><b>GreenHouse Sensor.</b></span>
+    <br><br>
+    Qual o seu faturamento anual?
+    <br> <br>
+    <input id="faturamento" placeholder="Faturamento anual R$">
+    <br><br>
+    <button onclick="calculo()"> Descubra quanto você pode <b>ganhar!</b></button><br>
+    <br>
+    <span id="mostrar"></span>
+
+</body>
+
+</html>
+<script>
+    function calculo() {
+        var total = faturamento.value * 0.4 + Number(faturamento.value)
+        mostrar.innerHTML = `Você está faturando R$${faturamento.value}, 
+        e se utilizar o nosso sistema você pode faturar <b>R$${total}!!!</b>`;
+    }
+
+</script>
