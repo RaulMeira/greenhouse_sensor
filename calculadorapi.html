@@ -22,15 +22,17 @@
     <br>
     <span id="mostrar"></span>
 
+
 </body>
 
 </html>
 <script>
     function calculo() {
         var ganhava = Number(faturamento.value)
-        var total = ganhava * 0.4 + ganhava
-        mostrar.innerHTML = `Você está faturando R$${ganhava.toFixed(2)}, 
-        e se utilizar o nosso sistema você pode faturar <b>R$${total.toFixed(2)}!!!</b>`;
+        var total = ganhava * 10
+        mostrar.innerHTML = `Com a sua atual estufa convencional voce esta ganhando R$${ganhava.toFixed(2)}.
+        <br><br>
+        O nosso sistema de sensores pode potencializar os seus ganhos para até <b>R$${total.toFixed(2)}!!!</b>`;
     }
 
 </script>
