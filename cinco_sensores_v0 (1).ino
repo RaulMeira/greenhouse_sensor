@@ -1,3 +1,10 @@
+/**
+antes de tudo: salvar o arquivo no computador;
+ir nas ferramentas -> gerenciar biblioteca -> instala a dht sensor library
+verifica se tem erro 
+liga o arduino no computador e aperta no "monitor serial"
+*/
+
 #include "DHT.h"
 #define dht_type DHT11 //define qual o tipo de sensor DHTxx que se está utilizando
  
@@ -8,7 +15,7 @@
  */
  
 int dht_pin = A2;
-DHT dht_1 = DHT(dht_pin, dht_type); //pode-se configurar diversos sensores DHTxx
+DHT dht_1 = DHT(dht_pin, dht_type); //pode-se configurar diversos sensores DHTxx 
 
 int lm35_pin = A0, leitura_lm35 = 0;
 float temperatura;
