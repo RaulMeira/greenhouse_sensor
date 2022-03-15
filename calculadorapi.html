@@ -19,7 +19,7 @@
     <input id="faturamento" placeholder="Faturamento anual R$">
     <br><br>
     <button onclick="calculo()"> Descubra quanto você pode <b>ganhar!</b></button><br>
-    <br>
+    <br><br>
     <span id="mostrar"></span>
 
 
@@ -28,12 +28,12 @@
 </html>
 <script>
     function calculo() {
-        var ganhava = Number(faturamento.value)
-        var total = ganhava * 10
-        mostrar.innerHTML = `Com a sua atual estufa convencional voce esta ganhando R$${ganhava.toFixed(2)}.
-        <br><br>
-        O nosso sistema de sensores pode potencializar os seus ganhos para até <b>R$${total.toFixed(2)}!!!</b><br><br>
-        Isso significa um crescimento 10X no seu faturamento.`;
+        var ganhava = Number(faturamento.value);
+        var total = (ganhava * 0.3) + ganhava;
+        mostrar.innerHTML = `<h3>Com a sua atual estufa convencional voce esta ganhando R$${ganhava.toFixed(2)}.</h3>
+
+        <h3>O nosso sistema de sensores pode potencializar os seus ganhos para até <b style="color: green;">R$${total.toFixed(2)}!!!</b></h3>
+        <h3>Isso significa um crescimento de até 30% no seu faturamento.</h3>`;
 
     }
 
